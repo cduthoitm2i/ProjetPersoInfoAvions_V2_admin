@@ -33,7 +33,7 @@
                 <label>Immatriculation essai avion&nbsp; </label><br>
                 <input type="text" name="immatriculation_essai_avion" value="F-WWEA" size="25" placeholder="D-AUAD"/><br><br>
                 <label>Date premier vol&nbsp; </label><br>
-                <input type="date" name="date_premier_vol_avion" value="2006-08-25" size="25" /><br><br>
+                <input type="text" name="date_premier_vol_avion" value="2006-08-25" size="25" /><br><br>
                 <label>Immatriculation compagnie avion&nbsp; </label><br>
                 <input type="text" name="immatriculation_compagnie_avion" value="A6-EDJ" size="25" placeholder="C-FPAI"/><br><br>
                 <label>Nom compagnie&nbsp; </label><br>
@@ -53,10 +53,10 @@
                 <label>Statut avion&nbsp; </label><br>
                 <select type="text" name="statut_avion" value="Active (parked)" required>
                     <option value="--Merci de choisir une option--"></option>
-                    <option value="stored">Stored</option>
-                    <option value="scrapped">Scrapped</option>
-                    <option value="active-parked">Active (parked)</option>
-                    <option value="active">Active</option>
+                    <option value="Stored">Stored</option>
+                    <option value="Scrapped">Scrapped</option>
+                    <option value="Active (parked)">Active (parked)</option>
+                    <option value="Active">Active</option>
                 </select><br>
 
                 <br>
