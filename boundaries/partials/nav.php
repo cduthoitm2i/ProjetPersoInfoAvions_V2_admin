@@ -5,14 +5,14 @@
 <!--    <li><a href="../boundaries/Accueil.php">Accueil</a></li>-->
 <!--    <li><a href="../boundaries/Authentification.php">Authentification</a></li>-->
 
-    <li><a href="../controls/VillesCTRL.php?action=selectAll">Villes</a></li>
-    <li><a href="../controls/VillesCTRL.php?action=insert">Nouvelle Ville</a></li>
-    <li><a href="../controls/VillesCTRL.php?action=delete">Supprimer une Ville</a></li>
-    <li><a href="../controls/VillesCTRL.php?action=update">Modifier une Ville</a></li>
+    <li><a href="../controls/AvionsCTRL.php?action=selectAll">Avions</a></li>
+    <li><a href="../controls/AvionsCTRL.php?action=insert">Ajouter un avion</a></li>
+    <li><a href="../controls/AvionsCTRL.php?action=delete">Supprimer un avion</a></li>
+    <li><a href="../controls/AvionsCTRL.php?action=update">Modifier un avion</a></li>
 
-    <li><a href="../controls/PaysSelectCTRL.php">Pays</a></li>
-    <li><a href="../controls/PaysInsertCTRL.php">Nouveau Pays</a></li>
-    <li><a href="../controls/PaysDeleteCTRL.php">Supprimer un Pays</a></li>
-    <li><a href="../controls/PaysUpdateCTRL.php">Modifier un Pays</a></li>
+    <li><a href="../controls/CompagnieSelectCTRL.php">Compagnie</a></li>
+    <li><a href="../controls/CompagnieInsertCTRL.php">Nouvelle compagnie</a></li>
+    <li><a href="../controls/CompagnieDeleteCTRL.php">Supprimer une compagnie</a></li>
+    <li><a href="../controls/CompagnieUpdateCTRL.php">Modifier une compagnie</a></li>
 </ul>
 <hr>

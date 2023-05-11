@@ -19,7 +19,7 @@
         </nav>
         <section id="section_principale">
             <h1>...</h1>
-            <img src="../images/demi_moore.jpg" alt="Photo" />
+            <!--<img src="../images/demi_moore.jpg" alt="Photo" />-->
         </section>
         <footer>
             <?php

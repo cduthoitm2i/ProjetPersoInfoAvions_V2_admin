@@ -9,7 +9,7 @@ require_once './PaysDAOProcedural.php';
 
 try {
     // Connexion
-    $pdo = getConnection("../conf/cours.ini");
+    $pdo = getConnection("../conf/monsite.ini");
 
     /*
      * TEST DU SELECT ALL

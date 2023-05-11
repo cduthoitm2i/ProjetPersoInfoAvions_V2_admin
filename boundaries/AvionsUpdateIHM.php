@@ -23,9 +23,9 @@
             ?>
         </nav>
         <section id="section_principale">
-            <h1>Modification d'une ville</h1>
-            <form action="../controls/VillesCTRL.php" method="POST">
-                <label>Quelle Ville ?</label>
+            <h1>Modification d'un avion</h1>
+            <form action="../controls/AvionsCTRL.php" method="POST">
+                <label>Quel avion ?</label>
                 <select name="ville">
                     <?php
                     $options = "";
@@ -43,7 +43,7 @@
 
             <br>
 
-            <form action="../controls/VillesCTRL.php" method="POST">
+            <form action="../controls/AvionsCTRL.php" method="POST">
                 <label>CP </label>
                 <input type="text" name="cp" value="<?php echo $cp ?>" size="5" id="cp_lecture_seul" readonly="readonly"/>
                 <label>Ville </label>

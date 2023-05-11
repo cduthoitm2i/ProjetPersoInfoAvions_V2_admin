@@ -1,7 +1,7 @@
 <?php
 
 /*
- * VillesCTRL.php
+ * AvionsCTRL.php
  */
 
 $message = "";
@@ -13,13 +13,13 @@ if ($action === null) {
 
 
 require_once '../daos/ConnectionDB.php';
-require_once '../daos/VillesDAOProcedural.php';
+require_once '../daos/AvionsDAOProcedural.php';
 
 $pdo = null;
 
 try {
     // Connexion
-    $pdo = getConnection("../conf/cours.ini");
+    $pdo = getConnection("../conf/monsite.ini");
 
     /*
      * TEST DU SELECT ONE
@@ -48,13 +48,13 @@ try {
  */
 if ($action === "selectAll") {
     $villes = selectAll($pdo);
-    include "../boundaries/VillesSelectIHM.php";
+    include "../boundaries/AvionsSelectIHM.php";
 }
 
 /*
  * PRE-INSERT
  */
 if ($action === "insert") {
-    include "../boundaries/VillesInsertIHM.php";
+    include "../boundaries/AvionsInsertIHM.php";
 }
 ?>

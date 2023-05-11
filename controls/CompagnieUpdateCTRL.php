@@ -1,13 +1,13 @@
 <?php
 
 /*
- * PaysUpdateCTRL.php
+ * CompagnieUpdateCTRL.php
  */
 
 $message = "";
 
 require_once '../daos/ConnectionDB.php';
-require_once '../daos/PaysDAOProcedural.php';
+require_once '../daos/CompagnieDAOProcedural.php';
 
 $pdo = null;
 
@@ -15,7 +15,7 @@ try {
     $idPays = "";
     $nomPays = "";
     // Connexion
-    $pdo = getConnection("../conf/cours.ini");
+    $pdo = getConnection("../conf/monsite.ini");
 
     $btSelectionner = filter_input(INPUT_POST, "btSelectionner");
     $idPays = filter_input(INPUT_POST, "id_pays");
@@ -40,5 +40,5 @@ try {
     $message = $e->getMessage();
 }
 
-include "../boundaries/PaysUpdateIHM.php";
+include "../boundaries/CompagnieUpdateIHM.php";
 ?>

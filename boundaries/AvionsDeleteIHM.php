@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!-- VillesDeleteIHM.php -->
+<!-- AvionsDeleteIHM.php -->
 <html>
     <head>
-        <title>VillesDeleteIHM</title>
+        <title>AvionsDeleteIHM</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/style.css" rel="stylesheet">
@@ -19,9 +19,9 @@
             ?>
         </nav>
         <section id="section_principale">
-            <h1>Suppression d'une ville</h1>
-            <form action="../controls/VillesCTRL.php" method="POST">
-                <label>Quelle Ville ?</label>
+            <h1>Suppression d'un avion</h1>
+            <form action="../controls/AvionsCTRL.php" method="POST">
+                <label>Quel avion ?</label>
                 <select name="cp">
                     <?php
                     $options = "";

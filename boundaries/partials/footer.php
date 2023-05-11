@@ -1,5 +1,5 @@
 <hr>
 <?php
 // footer.php
-echo "&copy; 2022 PB & co";
+echo "&copy; 2023 CD";
 ?>

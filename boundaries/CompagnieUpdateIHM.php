@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!-- PaysUpdateIHM.php -->
+<!-- CompagnieUpdateIHM.php -->
 <html>
     <head>
-        <title>PaysUpdateIHM</title>
+        <title>CompagnieUpdateIHM</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/style.css" rel="stylesheet">
@@ -23,9 +23,9 @@
             ?>
         </nav>
         <section id="section_principale">
-            <h1>Modification d'un pays</h1>
-            <form action="../controls/PaysUpdateCTRL.php" method="POST">
-                <label>Quel pays ?</label>
+            <h1>Modification d'une compagnie</h1>
+            <form action="../controls/CompagnieUpdateCTRL.php" method="POST">
+                <label>Quel compagnie ?</label>
                 <select name="id_pays">
                     <?php
                     $options = "";
@@ -42,7 +42,7 @@
 
             <br>
 
-            <form action="../controls/PaysUpdateCTRL.php" method="POST">
+            <form action="../controls/CompagnieUpdateCTRL.php" method="POST">
                 <label>ID pays </label>
                 <input type="text" name="id_pays" value="<?php echo $idPays ?>" size="5" id="id_pays_lecture_seul" readonly="readonly"/>
                 <label>Ville </label>

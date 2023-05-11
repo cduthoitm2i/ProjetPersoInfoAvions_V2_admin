@@ -19,9 +19,9 @@
             ?>
         </nav>
         <section>
-            <h1>Accueil Back-Office</h1>
+            <h1>Accueil Back-Office Site ProjetPersoInfoAvion_V2 (Admin)</h1>
             <p id="photoAccueil">
-                <img src="../images/demi_moore.jpg" alt="Photo" />
+                
             </p>
         </section>
         <footer>

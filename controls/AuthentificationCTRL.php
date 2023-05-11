@@ -22,7 +22,7 @@ if ($btValider != null) {
         // 
         $message = "Jusque là tout va bien !!!";
         require_once '../daos/ConnectionDB.php';
-        $pdo = getConnection("../conf/cours.ini");
+        $pdo = getConnection("../conf/monsite.ini");
         //
         require_once '../daos/UtilisateursDAOProcedural.php';
         $count = selectOneByPseudoAndMdp($pdo, $pseudo, $mdp);

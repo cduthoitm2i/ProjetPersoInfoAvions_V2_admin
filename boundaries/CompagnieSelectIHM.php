@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!-- PaysDeleteIHM.php -->
+<!-- PaysSelectIHM.php -->
 <html>
     <head>
-        <title>PaysDeleteIHM</title>
+        <title>CompagnieSelectIHM</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/style.css" rel="stylesheet">
@@ -19,31 +19,28 @@
             ?>
         </nav>
         <section id="section_principale">
-            <h1>Supression d'un pays</h1>
-            <form action="../controls/PaysDeleteCTRL.php" method="POST">
-                <label>Quel Pays </label>
-                <select name="id_pays">
+            <h1>CompagnieSelectIHM</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <?php
+                        ?>
+                    </tr>
+                </thead>
+
+                <tbody>
                     <?php
-                    $options = "";
+                    $body = "";
                     foreach ($list as $line) {
-                        $options .= "<option value='$line[0]'>$line[1]</option>\n";
+                        $body .= "<tr>\n";
+                        $body .= "<td>" . $line[0] . "</td>\n";
+                        $body .= "<td>" . $line[1] . "</td>\n";
+                        $body .= "</tr>\n";
                     }
-                    echo $options;
+                    echo $body;
                     ?> 
-                </select>
-                <input type="submit" value="Supprimer"/>
-            </form>
-
-            <br>
-
-            <label>
-                <?php
-                if (isSet($message)) {
-                    echo $message . " pays supprimé";
-                }
-                ?>
-            </label>
-
+                </tbody>
+            </table>
 
         </section>
         <footer>

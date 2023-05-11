@@ -1,19 +1,19 @@
 <?php
 
 /*
- * PaysDeleteCTRL.php
+ * CompagnieDeleteCTRL.php
  */
 
 $message = "";
 
 require_once '../daos/ConnectionDB.php';
-require_once '../daos/PaysDAOProcedural.php';
+require_once '../daos/CompagnieDAOProcedural.php';
 
 $pdo = null;
 
 try {
     // Connexion
-    $pdo = getConnection("../conf/cours.ini");
+    $pdo = getConnection("../conf/monsite.ini");
     /*
      * INSERT
      */
@@ -25,5 +25,5 @@ try {
 } catch (PDOException $e) {
     $message = $e->getMessage();
 }
-include "../boundaries/PaysDeleteIHM.php";
+include "../boundaries/CompagnieDeleteIHM.php";
 ?>
