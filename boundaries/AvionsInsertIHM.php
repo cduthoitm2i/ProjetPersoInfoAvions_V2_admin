@@ -53,10 +53,16 @@
                 <label>Statut avion&nbsp; </label><br>
                 <select type="text" name="statut_avion" value="Active (parked)" required>
                     <option value="--Merci de choisir une option--"></option>
+                    <!-- Avion stocké-->
                     <option value="Stored">Stored</option>
+                    <!-- Avion démantelé-->
                     <option value="Scrapped">Scrapped</option>
+                    <!-- Avion actif mais en attente de démantelement ou de vente à un autre opérateur-->
                     <option value="Active (parked)">Active (parked)</option>
+                    <!-- Avion en activité-->
                     <option value="Active">Active</option>
+                    <!-- Avion détruit (par accident, etc)-->
+                    <option value="Written off">Written off</option>
                 </select><br>
 
                 <br>
