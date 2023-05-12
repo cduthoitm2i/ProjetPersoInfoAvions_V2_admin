@@ -19,7 +19,7 @@
             ?>
         </nav>
         <section id="section_principale">
-            <h1>Insertion avion</h1>
+            <h1>Ajouter un avion</h1>
 
             <form action="../controls/AvionsCTRL.php" method="POST">
                 <label>Modèle avion&nbsp; </label><br>
@@ -33,7 +33,7 @@
                 <label>Immatriculation essai avion&nbsp; </label><br>
                 <input type="text" name="immatriculation_essai_avion" value="F-WWEA" size="25" placeholder="D-AUAD"/><br><br>
                 <label>Date premier vol&nbsp; </label><br>
-                <input type="text" name="date_premier_vol_avion" value="2006-08-25" size="25" /><br><br>
+                <input type="date" name="date_premier_vol_avion" value="2006-08-25" size="25" /><br><br>
                 <label>Immatriculation compagnie avion&nbsp; </label><br>
                 <input type="text" name="immatriculation_compagnie_avion" value="A6-EDJ" size="25" placeholder="C-FPAI"/><br><br>
                 <label>Nom compagnie&nbsp; </label><br>
