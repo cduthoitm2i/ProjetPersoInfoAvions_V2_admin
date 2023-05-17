@@ -1,7 +1,7 @@
 <?php
 
 /*
- * VillesCTRL.php
+ * AvionsCTRL.php
  */
 
 $message = "";
@@ -22,24 +22,6 @@ try {
     // Connexion
     $pdo = getConnection("../conf/monsite.ini");
 
-    /*
-     * TEST DU SELECT ONE
-     */
-//    echo "<hr>SELECT ONE<hr>";
-//    $t = selectOne($pdo, "75011");
-//    echo "<pre>";
-//    var_dump($t);
-//    echo "</pre>";
-
-    /*
-     * TEST DE L'UPDATE
-     */
-//    echo "<hr>UPDATE<hr>";
-//    $tAttributesValues = array();
-//    $tAttributesValues['nom_ville'] = "Praha";
-//    $tAttributesValues['id_pays'] = "CZ";
-//    $affected = update($pdo, $tAttributesValues, "75022");
-//    echo "Modification : $affected";
 } catch (PDOException $exc) {
     echo $exc->getMessage();
 }
@@ -95,8 +77,8 @@ if ($action === "delete") {
  * DELETE
  */
 if ($action === "deleteValidation") {
-    $cp = filter_input(INPUT_POST, "cp");
-    $affected = delete($pdo, $cp);
+    $numero_serie_avion = filter_input(INPUT_POST, "numero_serie_avion");
+    $affected = delete($pdo, $numero_serie_avion);
     $message = "Suppression : $affected";
     $avions = selectAll($pdo);
     include "../boundaries/AvionsDeleteIHM.php";

@@ -22,12 +22,12 @@
             <h1>Suppression d'un avion</h1>
             <form action="../controls/AvionsCTRL.php" method="POST">
                 <label>Quel avion ?</label>
-                <select name="cp">
+                <select name="numero_serie_avion">
                     <?php
                     $options = "";
-                    foreach ($villes as $enregistrement) {
-                        $options .= "<option value='" . $enregistrement['cp'] . "'>";
-                        $options .= $enregistrement['nom_ville'];
+                    foreach ($avions as $enregistrement) {
+                        $options .= "<option value='" . $enregistrement['numero_serie_avion'] . "'>";
+                        $options .= $enregistrement['modele_avion'] . " / MSN&nbsp: " . $enregistrement['numero_serie_avion'];
                         $options .= "</option>\n";
                     }
                     echo $options;
