@@ -17,7 +17,7 @@ try {
     /*
      * SELECT ALL
      */
-    $list = selectAllPays($pdo);
+    $list = selectAllCompagnie($pdo);
     include "../boundaries/CompagnieSelectIHM.php";
 } catch (PDOException $e) {
     

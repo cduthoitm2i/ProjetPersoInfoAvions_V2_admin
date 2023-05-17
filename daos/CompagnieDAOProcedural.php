@@ -1,19 +1,19 @@
 <?php
 
 /*
-  PaysDAOProcedural.php
+  CompagnieDAOProcedural.php
  */
 /*
-  LE DAO de la table [pays] de la BD [cours]
+  LE DAO de la table [compagnie] de la BD 
  */
 
-function selectAllPays(PDO $pdo): array {
+function selectAllCompagnie(PDO $pdo): array {
     /*
      * Renvoie un tableau ordinal de tableaux associatifs
      */
     $list = array();
     try {
-        $cursor = $pdo->query("SELECT * FROM pays");
+        $cursor = $pdo->query("SELECT * FROM compagnie");
         // Renvoie un tableau ordinal de tableaux associatifs
         $list = $cursor->fetchAll();
 //        foreach ($list as $line) {
@@ -36,12 +36,12 @@ function selectAllPays(PDO $pdo): array {
  * @param string $id
  * @return array
  */
-function selectOnePays(PDO $pdo, string $id): array {
+function selectOneCompagnie(PDO $pdo, string $id): array {
     /*
      * Renvoie un tableau associatif
      */
     try {
-        $sql = "SELECT * FROM pays WHERE id_pays = ?";
+        $sql = "SELECT * FROM compagnie WHERE id_compagnie = ?";
         $cursor = $pdo->prepare($sql);
         $cursor->bindValue(1, $id);
         $cursor->execute();
@@ -64,14 +64,14 @@ function selectOnePays(PDO $pdo, string $id): array {
  * @param array $tAttributesValues
  * @return int
  */
-function insertPays(PDO $pdo, array $tAttributesValues): int {
+function insertCompagnie(PDO $pdo, array $tAttributesValues): int {
     $affected = 0;
     try {
-        $sql = "INSERT INTO pays(id_pays, nom_pays) VALUES(?,?)";
+        $sql = "INSERT INTO compagnie(id_compagnie, nom_compagnie) VALUES(?,?)";
         $statement = $pdo->prepare($sql);
 
-        $statement->bindValue(1, $tAttributesValues["id_pays"]);
-        $statement->bindValue(2, $tAttributesValues["nom_pays"]);
+        $statement->bindValue(1, $tAttributesValues["id_compagnie"]);
+        $statement->bindValue(2, $tAttributesValues["nom_compagnie"]);
 
         $statement->execute();
         $affected = $statement->rowcount();
@@ -88,10 +88,10 @@ function insertPays(PDO $pdo, array $tAttributesValues): int {
  * @param string $id
  * @return int
  */
-function deletePays(PDO $pdo, string $id): int {
+function deleteCompagnie(PDO $pdo, string $id): int {
     $affected = 0;
     try {
-        $sql = "DELETE FROM pays WHERE id_pays = ?";
+        $sql = "DELETE FROM compagnie WHERE id_compagnie = ?";
 
         $statement = $pdo->prepare($sql);
         $statement->bindValue(1, $id);
@@ -111,13 +111,13 @@ function deletePays(PDO $pdo, string $id): int {
  * @param string $pk
  * @return int
  */
-function updatePays(PDO $pdo, array $tAttributesValues, string $pk): int {
+function updateCompagnie(PDO $pdo, array $tAttributesValues, string $pk): int {
     $affected = 0;
     try {
-        $sql = "UPDATE pays SET nom_pays = ? WHERE id_pays = ?";
+        $sql = "UPDATE compagnie SET nom_compagnie = ? WHERE id_compagnie = ?";
         $statement = $pdo->prepare($sql);
 
-        $statement->bindValue(1, $tAttributesValues["nom_pays"]);
+        $statement->bindValue(1, $tAttributesValues["nom_compagnie"]);
         $statement->bindValue(2, $pk);
 
         $statement->execute();

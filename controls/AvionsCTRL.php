@@ -92,7 +92,7 @@ $nomVille = "";
 $idPays = "";
 if ($action === "update") {
     $avions = selectAll($pdo);
-    $compagnie = selectAllPays($pdo);
+    $compagnie = selectAllCompagnie($pdo);
     include "../boundaries/AvionsUpdateIHM.php";
 }
 /*
@@ -104,7 +104,7 @@ if ($action === "updateSelection") {
     $ville = selectOne($pdo, $cp);
     $nomVille = $ville["nom_ville"];
     $idPays = $ville["id_pays"];
-    $compagnie = selectAllPays($pdo);
+    $compagnie = selectAllCompagnie($pdo);
     include "../boundaries/AvionsUpdateIHM.php";
 }
 /*
@@ -118,7 +118,7 @@ if ($action === "updateValidation") {
     $affected = update($pdo, $tAttributesValues, $pk);
     $message = "Modification : $affected";
     $avions = selectAll($pdo);
-    $compagnie = selectAllPays($pdo);
+    $compagnie = selectAllCompagnie($pdo);
     include "../boundaries/AvionsUpdateIHM.php";
 }
 ?>

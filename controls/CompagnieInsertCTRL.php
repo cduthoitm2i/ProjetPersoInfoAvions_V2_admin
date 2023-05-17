@@ -17,13 +17,13 @@ try {
     /*
      * INSERT
      */
-    $idPays = filter_input(INPUT_POST, "id_pays");
-    $nomPays = filter_input(INPUT_POST, "nom_pays");
-    if ($idPays != null && $nomPays != null) {
+    $idCompagnie = filter_input(INPUT_POST, "id_compagnie");
+    $nomCompagnie = filter_input(INPUT_POST, "nom_compagnie");
+    if ($idCompagnie != null && $nomCompagnie != null) {
         //    $tAttributesValues = array();
-        $tAttributesValues['id_pays'] = $idPays;
-        $tAttributesValues['nom_pays'] = $nomPays;
-        $message = insertPays($pdo, $tAttributesValues);
+        $tAttributesValues['id_compagnie'] = $idCompagnie;
+        $tAttributesValues['nom_compagnie'] = $nomCompagnie;
+        $message = insertCompagnie($pdo, $tAttributesValues);
     }
 } catch (PDOException $e) {
     $message = $e->getMessage();
