@@ -15,7 +15,7 @@ try {
      * TEST DU SELECT ALL
      */
     echo "<hr>SELECT ALL<hr>";
-    $t = selectAllPays($pdo);
+    $t = selectAllCompagnie($pdo);
     echo "<pre>";
     var_dump($t);
     echo "</pre>";
@@ -51,8 +51,8 @@ try {
      */
     echo "<hr>UPDATE<hr>";
     $tAttributesValues = array();
-    $tAttributesValues['nom_pays'] = "RUSSIE";
-    $affected = updatePays($pdo, $tAttributesValues, "RU");
+    $tAttributesValues['nom_compagnie'] = "RUSSIE";
+    $affected = updateCompagnie($pdo, $tAttributesValues, "RU");
     echo "Modification : $affected";
 
     $pdo = null;
